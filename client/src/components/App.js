@@ -17,6 +17,9 @@ function App() {
       .then((messages) => setMessages(messages));
   }, []);
 
+  console.log('messages', messages)
+
+
   function handleAddMessage(newMessage) {
     setMessages([...messages, newMessage]);
   }
